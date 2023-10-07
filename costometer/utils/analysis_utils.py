@@ -382,9 +382,11 @@ class AnalysisObject:
                 / "processed"
                 / f"{session}"
                 / f"{self.cost_function}"
-                / "mle_and_map"
-                / f"{'_' + self.block if self.block != 'test' else ''}_{pid}.pickle",
-            )
+                / f"mle_and_map"
+                  f"{'_' + self.block if self.block != 'test' else ''}"
+                  f"_{pid}.pickle",
+
+        )
             for session, pid in self.dfs["mouselab-mdp"][["session", "pid"]]
             .drop_duplicates()
             .values
