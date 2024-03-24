@@ -23,6 +23,10 @@ from costometer.utils.posterior_utils import (
     greedy_hdi_quantification,
     marginalize_out_for_data_set,
 )
+from costometer.utils.scripting_utils import (
+    set_plotting_and_logging_defaults,
+    standard_parse_args,
+)
 from costometer.utils.trace_utils import (
     adjust_ground_truth,
     adjust_state,

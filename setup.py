@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name="costometer",
-    version="0.0.2",
+    version="0.0.3",
     packages=[
         "costometer",
         "costometer.agents",
@@ -26,9 +26,10 @@ setup(
         # plus commit that fixes typo: https://github.com/openai/gym/issues/3202
         "gym @ git+https://github.com/openai/gym.git@9180d12e1b66e7e2a1a622614f787a6ec147ac40",
         "hyperopt",
-        "mouselab @ git+https://github.com/RationalityEnhancementGroup/mouselab-mdp-tools.git@dev#egg=mouselab",  # noqa
+        "mouselab",
         "numpy",
         "pandas",
+        "pydantic-yaml",
         "pyyaml",
         "statsmodels",
         "tqdm",
